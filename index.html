@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo sostenible en Concepción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Turismo sostenible en Concepción</h1>
+    <div class="form">
+      <label for="origen">Puntos referentes de ubicación:</label>
+      <select id="origen">
+        <optgroup label="Punto de referencia inicial"></optgroup>
+        <option value="parque_concepcion">Parque de Concepción</option>
+        </optgroup>
+      </select>
+      <label for="destino">Destino:</label>
+      <select id="destino">
+        <optgroup label="Punto de destino">
+          <option value="piedra_parada">Piedra Parada</option>
+          <option value="ingenio_valle_azul">Ingenio (Valle Azul)</option>
+          <option value="santa_rosa_ocopa">Santa Rosa de Ocopa (Convento)</option>
+        </optgroup>
+      </select>
+      <button onclick="calcularRuta()">Calcular</button>
+    </div>
+    <div id="resultado"></div>
+    <div id="info"></div> <!-- Nuevo elemento para mostrar la información -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
